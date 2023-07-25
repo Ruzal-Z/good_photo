@@ -1,17 +1,16 @@
 # flake8: noqa
 import os
-from decouple import config
-from dotenv import load_dotenv
+from dotenv import load_dotenv, find_dotenv
 from pathlib import Path
 
 BASE_DIR = Path(__file__).resolve().parent.parent
 
-load_dotenv()
-SECRET_KEY = os.getenv('SECRET_KEY')
+load_dotenv(find_dotenv())
+SECRET_KEY = os.environ.get('SECRET_KEY')
 
-DEBUG = os.getenv('DEBUG', 'False') == 'True'
+DEBUG = os.environ.get('DEBUG', 'False') == 'True'
 
-ALLOWED_HOSTS = config('ALLOWED_HOSTS', default='127.0.0.1,localhost').split(
+ALLOWED_HOSTS = os.environ.get('ALLOWED_HOSTS', '127.0.0.1,localhost').split(
     ','
 )
 
