@@ -1,5 +1,6 @@
 # flake8: noqa
 import os
+from decouple import config
 from dotenv import load_dotenv
 from pathlib import Path
 
@@ -9,11 +10,10 @@ load_dotenv()
 SECRET_KEY = os.getenv('SECRET_KEY')
 
 DEBUG = os.getenv('DEBUG', 'False') == 'True'
-ALLOWED_HOSTS = [
-    host.strip()
-    for host in os.getenv(ALLOWED_HOSTS, '127.0.0.1,localhost').split(',')
-]
 
+ALLOWED_HOSTS = config('ALLOWED_HOSTS', default='127.0.0.1,localhost').split(
+    ','
+)
 
 INSTALLED_APPS = [
     'django.contrib.admin',
