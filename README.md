@@ -1,9 +1,8 @@
-![example workflow](https://github.com/Ruzal-Z/kittygram_final/actions/workflows/main.yml/badge.svg)
-
-# Kittygram
+# Good Photo
+![example workflow](https://github.com/Ruzal-Z/good_photo/actions/workflows/main.yml/badge.svg) ![Статус проекта: Альфа версия](https://img.shields.io/badge/%D0%A1%D1%82%D0%B0%D1%82%D1%83%D1%81-%D0%90%D0%BB%D1%8C%D1%84%D0%B0%20%D0%B2%D0%B5%D1%80%D1%81%D0%B8%D1%8F-yellowgreen.svg)
 
 ### Описание
-Kittygram — социальная сеть для обмена фотографиями любимых питомцев. Состоит из бэкенд-приложения на Django и фронтенд-приложения на React. Поддерживает регистрацию и авторизацию, можно добавить нового котика на сайт или изменить существующего, а также просмотреть записи других пользователей.
+Good Photo — социальная сеть для обмена фотографиями . Состоит из бэкенд-приложения на Django и фронтенд-приложения на React. Поддерживает регистрацию и авторизацию, можно добавить нового котика на сайт или изменить существующего, а также просмотреть записи других пользователей.
 
 ### Используемые технологии
 - Python 3.10
@@ -19,11 +18,11 @@ Kittygram — социальная сеть для обмена фотограф
 ### Как развернуть проект локально
 1. Клонировать репозиторий:
     ```bash
-    git clone git@github.com:monk-time/kittygram_final.git
-    cd kittygram_final/
+    git clone git@github.com:Ruzal-Z/good_photo.git
+    cd good_photo/
     ```
 
-2. Создать в папке kittygram_final/ файл `.env` с переменными окружения (см. [.env.example](.env.example)).
+2. Создать в папке good_photo/ файл `.env` с переменными окружения (см. [.env.example](.env.example)).
 
 3. Собрать и запустить докер-контейнеры через Docker Compose:
     ```bash
