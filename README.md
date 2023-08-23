@@ -6,12 +6,12 @@ Good Photo — социальная сеть для обмена фотогра�
 
 ### Используемые технологии
 - Python 3.10
-- Django
-- Django REST Framework
+- Django 3.2
+- Django REST Framework 3.12
 - Node.js
 - React
 - Gunicorn
-- Nginx
+- Nginx 20.1
 - Docker
 - GitHub Actions
 
